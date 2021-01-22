@@ -316,7 +316,7 @@ section {
 .about__avatar {
   width: 500px;
   height: 500px;
-  background: url("img/profill/profill.jpg") center/cover no-repeat;
+  background: url("img/profill/orihara.jpg") center/cover no-repeat;
   border-radius: var(--radius-basic);
 }
 
