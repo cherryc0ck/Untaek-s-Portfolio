@@ -4,12 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="main.js" defer></script>
-    <script src="home.js" defer></script>
+
+    <!--★★★★★★★★★★★-->
+    <!--       JS & CSS      -->
+    <!--★★★★★★★★★★★-->
+    <script src="js/main.js" defer></script>
+    <script src="js/home.js" defer></script>
+    <script src="js/typing.js" defer></script>
+    <script src="js/project.js" defer></script>
     <style type="text/css">
       @import url("reset.css");
     </style>
     <link rel="stylesheet" href="style.css" />
+
+    <!--★★★★★★★★★★★-->
+    <!--     Font & Icon     -->
+    <!--★★★★★★★★★★★-->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
@@ -21,7 +31,15 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
+  <!--★★★★★★★★★★★-->
+  <!--       HTML          -->
+  <!--★★★★★★★★★★★-->
   <body>
     <!-- Navbar -->
     <nav id="navbar">
@@ -82,7 +100,6 @@
           <i class="fas fa-sms"></i>
         </li>
       </ul>
-      <!-- <img src="img/element/blue-semicircle.png" class="ele semicircle" /> -->
       <img src="img/element/semo1.png" class="ele semo1" />
       <img src="img/element/semo2.png" class="ele semo2" />
       <img src="img/element/stick1.png" class="ele stick1" />
@@ -95,234 +112,208 @@
       <img src="img/element/semicircle3.png" class="ele semicircle3" />
     </section>
 
+    <div class="line"></div>
+
     <!-- About -->
-    <section id="about">
-      <h2 class="section__title">ABOUT</h2>
-      <div class="underline"></div>
+    <section id="about" class="section">
+      <!-- <h2 class="section__title">ABOUT</h2>
+      <div class="underline"></div> -->
       <div class="about__container container">
         <div class="about__avatar"></div>
         <div class="about__title">
-          <h1 class="about__title-one">Web is fun</h1>
-          <h2 class="about__title-two">
-            안녕하세요 <br />
-            신입 프론트엔드 개발자 홍언택입니다.
+          <h1 class="title__text webis">
+            WEB IS
+            <span class="typing"></span>
+          </h1>
+          <h2 class="title__text intro">
+            안녕하세요 !<br />
+            프론트엔드 개발자 홍언택입니다.
           </h2>
-          <p class="about__description">
-            저는 페이지에 <span>"생기"</span> 를 불어넣는 것을 좋아합니다.
+          <p class="title__text description">
+            저는 페이지에 &nbsp;<span>생기</span> 를 불어넣는 것을 좋아합니다.
             <br />
             비전공으로 웹분야를 처음 맛을 봤을 땐 <br />
             자바 기반의 백엔드 교육과정이었습니다. <br />
             변화가 없는 UI에 흥미를 잃어가던 와중 <br />
             UI를 동적으로 퍼블리싱하고 개발하는 <br />
             프론트엔드에 흥미가 생겨 새로운 도전을 했습니다. <br />
-            Lorem ipsum dolor sit amet.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- Skills-->
-    <section id="skills" class="section section__container">
-      <h2 class="section__title">SKILLS</h2>
-      <div class="underline"></div>
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <img src="img/pen2.png" class="emsi" />
       <div class="skill__container">
-        <div class="skill__label">
-          <div class="label__row">
-            <div class="label html"></div>
-            <div class="label css"></div>
-            <div class="label js"></div>
+        <div class="skill__left">
+          <span class="skill__division main">MAIN</span>
+          <img class="division main-img" src="img/bookmark-left.png" />
+          <div class="skill">
+            <div class="skill__description">
+              <h3>HTML</h3>
+              <div class="skill__bar">
+                <div class="skill__value graph-90" style="width: 90%" ;></div>
+                <span>90</span>
+              </div>
+            </div>
+            <p>
+              웹 표준을 준수하며 문서를 구조화, 사용자의 편리성을 고려하여<br />
+              마크업을 작성합니다.
+            </p>
           </div>
-          <div class="label__row">
-            <div class="label react"></div>
-            <div class="label git"></div>
-            <div class="label photoshop"></div>
+          <div class="skill">
+            <div class="skill__description">
+              <h3>CSS</h3>
+              <div class="skill__bar">
+                <div class="skill__value graph-90" style="width: 90%" ;></div>
+                <span>90</span>
+              </div>
+            </div>
+            <p>상황에 맞는 CSS를 이용하여 다양한 스타일을 구현합니다.</p>
           </div>
-          <div class="label__row">
-            <div class="label spring"></div>
-            <div class="label java"></div>
-            <div class="label sql"></div>
+          <div class="skill">
+            <div class="skill__description">
+              <h3>JAVASCRIPT</h3>
+              <div class="skill__bar">
+                <div class="skill__value graph-70" style="width: 70%" ;></div>
+                <span>70</span>
+              </div>
+            </div>
+            <p>
+              기초문법, 브라우저를 이해하고 활용할 수 있으며 항상 성능개선과<br />
+              리팩토링에 신경씁니다.
+            </p>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <h3>REACT</h3>
+              <div class="skill__bar">
+                <div class="skill__value graph-50" style="width: 50%" ;></div>
+                <span>50</span>
+              </div>
+            </div>
+            <p>
+              리액트 전반적인 컨셉과 개념에 대한 이해도가 있으며 Firebase를<br />
+              이용한 서버 실시간 데이터베이스 구축이 가능합니다.
+            </p>
           </div>
         </div>
-
-        <div class="skill__graph">
+        <div class="skill__right">
+          <span class="skill__division etc">ETC</span>
+          <img class="division etc-img" src="img/bookmark-right.png" />
+          <span class="skill__division back">BACK</span>
+          <img class="division back-img" src="img/bookmark-right.png" />
           <div class="skill">
-            <div class="skill__name">HTML</div>
-            <div class="skill__bar">
-              <div class="skill__value" style="width: 90%">
-                <span>90%</span>
+            <div class="skill__description">
+              <h3>GIT</h3>
+              <div class="skill__bar">
+                <div class="skill__value graph-70" style="width: 70%" ;></div>
+                <span>70</span>
               </div>
             </div>
+            <p>
+              Github를 통한 협업뿐만 아니라 터미널을 이용한 개인 프로젝트<br />
+              관리가 가능합니다.
+            </p>
           </div>
           <div class="skill">
-            <div class="skill__name">CSS</div>
-            <div class="skill__bar">
-              <div class="skill__value" style="width: 90%">
-                <span>90%</span>
+            <div class="skill__description">
+              <h3>PHOTOSHOP</h3>
+              <div class="skill__bar">
+                <div class="skill__value graph-60" style="width: 60%" ;></div>
+                <span>60</span>
               </div>
             </div>
+            <p>기본적인 사진보정, 편집등의 작업이 가능합니다.</p>
           </div>
           <div class="skill">
-            <div class="skill__name">JavaScript</div>
-            <div class="skill__bar">
-              <div class="skill__value" style="width: 80%">
-                <span>70%</span>
+            <div class="skill__description">
+              <h3>JAVA</h3>
+              <div class="skill__bar">
+                <div class="skill__value graph-50" style="width: 50%" ;></div>
+                <span>50</span>
               </div>
             </div>
+            <p>
+              기본적인 문법, 알고리즘, 객체지향프로그래밍에 대한 이해도가<br />
+              있습니다.
+            </p>
           </div>
           <div class="skill">
-            <div class="skill__name">React</div>
-            <div class="skill__bar">
-              <div class="skill__value" style="width: 60%">
-                <span>50%</span>
+            <div class="skill__description">
+              <h3>SPRING</h3>
+              <div class="skill__bar">
+                <div class="skill__value graph-50" style="width: 50%" ;></div>
+                <span>50</span>
               </div>
             </div>
-          </div>
-          <div class="skill">
-            <div class="skill__name">Java</div>
-            <div class="skill__bar">
-              <div class="skill__value" style="width: 60%">
-                <span>60%</span>
-              </div>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill__name">Sql</div>
-            <div class="skill__bar">
-              <div class="skill__value" style="width: 50%">
-                <span>50%</span>
-              </div>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill__name">Spring</div>
-            <div class="skill__bar">
-              <div class="skill__value" style="width: 60%">
-                <span>60%</span>
-              </div>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill__name">Git</div>
-            <div class="skill__bar">
-              <div class="skill__value" style="width: 90%">
-                <span>80%</span>
-              </div>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill__name">Photoshop</div>
-            <div class="skill__bar">
-              <div class="skill__value" style="width: 50%">
-                <span>50%</span>
-              </div>
-            </div>
+            <p>
+              AOP에 대한 이해도가 있으며 MyBatis를 연동한 프로젝트 <br />
+              경험이 있습니다.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- work-->>
-    <section id="work">
-      <h2 class="section__title">PROJECTS</h2>
-      <div class="underline"></div>
+    <!-- Work -->
+    <section id="work" class="section">
+      <!-- <h2 class="section__title work">WORK</h2>
+      <h3 class="section__description">PROJECTS</h3> -->
       <div class="work__container container">
-        <div class="work__categories">
-          <button class="category__btn selected">ALL</button>
-          <button class="category__btn">RENEWAL</button>
-          <button class="category__btn">JAVASCRIPT</button>
-          <button class="category__btn">REACT-JS</button>
-        </div>
-        <div class="work__projects">
-          <a
-            href="https://github.com/Oriharaa"
-            class="project"
-            target="blank"
-            data-type="RENEWAL"
-          >
-            <img src="img/project/hiphop.jpg" class="project__img" alt="fuck" />
-          </a>
-          <a
-            href="https://github.com/Oriharaa"
-            class="project"
-            target="blank"
-            data-type="RENEWAL"
-          >
-            <img src="img/project/board.jpg" class="project__img" alt="fuck" />
-          </a>
-          <a
-            href="https://github.com/Oriharaa"
-            class="project"
-            target="blank"
-            data-type="RENEWAL"
-          >
-            <img src="img/project/todo.jpg" class="project__img" alt="fuck" />
-          </a>
-          <a
-            href="https://github.com/Oriharaa"
-            class="project"
-            target="blank"
-            data-type="RENEWAL"
-          >
-            <img
-              src="img/project/zombie1.jpg"
-              class="project__img"
-              alt="fuck"
-            />
-          </a>
-          <a
-            href="https://github.com/Oriharaa"
-            class="project"
-            target="blank"
-            data-type="RENEWAL"
-          >
-            <img
-              src="img/project/random1.jpg"
-              class="project__img"
-              alt="fuck"
-            />
-          </a>
-          <a
-            href="https://github.com/Oriharaa"
-            class="project"
-            target="blank"
-            data-type="RENEWAL"
-          >
-            <img
-              src="img/project/random2.jpg"
-              class="project__img"
-              alt="fuck"
-            />
-          </a>
-          <a
-            href="https://github.com/Oriharaa"
-            class="project"
-            target="blank"
-            data-type="RENEWAL"
-          >
-            <img
-              src="img/project/random3.jpg"
-              class="project__img"
-              alt="fuck"
-            />
-          </a>
-          <a
-            href="https://github.com/Oriharaa"
-            class="project"
-            target="blank"
-            data-type="RENEWAL"
-          >
-            <img src="img/project/blue1.jpg" class="project__img" alt="fuck" />
-          </a>
-          <a
-            href="https://github.com/Oriharaa"
-            class="project"
-            target="blank"
-            data-type="RENEWAL"
-          >
-            <img src="img/project/blue1.jpg" class="project__img" alt="fuck" />
-          </a>
-        </div>
+        <ul class="projects">
+          <li>
+            <a class="project hiphop">
+              <span class="project__number">01</span>
+              <div class="mask"></div>
+              <div class="project__description">
+                <h3>Best Horror Scenes</h3>
+                <h4>랜딩 페이지 리디자인</h4>
+                <button>Go to page</button>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="project board">
+              <span class="project__number">02</span>
+              <div class="mask"></div>
+              <div class="project__description">
+                <h3>Paint-box</h3>
+                <h4>랜딩 페이지 리디자인</h4>
+                <button>Go to page</button>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="project todo">
+              <span class="project__number">03</span>
+              <div class="mask"></div>
+              <div class="project__description">
+                <h3>To do list</h3>
+                <h4>자바스크립트 기반 투두리스트</h4>
+                <button>Go to page</button>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="project zombie">
+              <span class="project__number">04</span>
+              <div class="mask"></div>
+              <div class="project__description">
+                <h3>Ten jombies</h3>
+                <h4>자바스크립트 기반 미니게임</h4>
+                <button>Go to page</button>
+              </div>
+            </a>
+          </li>
+        </ul>
       </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="contact__container">F U C K CONTACT</div>
     </section>
   </body>
 </html>

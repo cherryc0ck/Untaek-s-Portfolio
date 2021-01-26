@@ -25,13 +25,13 @@ function mouseLeftAndRight(event){
         stick1.style.left = '280px';
         semicircle1.style.left = '1300px';
         semicircle2.style.right = '200px';
-        semicircle3.style.left = '50px';
+        semicircle3.style.left = '100px';
         
         //역방향
         stick2.style.right = '130px';
         stick3.style.left = '150px';
         wave1.style.left = '100px';
-        wave2.style.left = '600px';
+        wave2.style.left = '730px';
 
     //마우스가 오른쪽으로 move할 때    
     }else if(event.clientX > 739){
@@ -40,13 +40,13 @@ function mouseLeftAndRight(event){
         stick1.style.left = '380px';
         semicircle1.style.left = '1400px';
         semicircle2.style.right = '100px';
-        semicircle3.style.left = '150px';
+        semicircle3.style.left = '200px';
 
         //역방향
         stick2.style.right = '230px';
         stick3.style.left = '50px';
         wave1.style.left = '0px';
-        wave2.style.left = '500px';
+        wave2.style.left = '630px';
     }
 };
 
@@ -59,13 +59,13 @@ function mouseUpAndDown(event){
             stick1.style.top = '-70px';
             semicircle1.style.top = '-60px';
             semicircle2.style.bottom = '250px';
-            semicircle3.style.bottom = '150px';
+            semicircle3.style.bottom = '200px';
             
             //정방향
-            stick2.style.bottom = '-100px';
-            stick3.style.bottom = '-100px';
+            stick2.style.bottom = '-50px';
+            stick3.style.bottom = '-50px';
             wave1.style.top = '280px';
-            wave2.style.bottom = '-70px';
+            wave2.style.bottom = '-45px';
             
         }
         //마우스가 위로 move할 때
@@ -76,12 +76,12 @@ function mouseUpAndDown(event){
             stick1.style.top = '30px';
             semicircle1.style.top = '40px';
             semicircle2.style.bottom = '150px';
-            semicircle3.style.bottom = '50px';
+            semicircle3.style.bottom = '100px';
 
             //정방향
-            stick2.style.bottom = '0px';
-            stick3.style.bottom = '0px';
+            stick2.style.bottom = '50px';
+            stick3.style.bottom = '50px';
             wave1.style.top = '180px';
-            wave2.style.bottom = '30px';
+            wave2.style.bottom = '55px';
         }
 };

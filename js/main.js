@@ -2,12 +2,15 @@
 
 const navbar = document.querySelector('#navbar');
 const navbarMenu = document.querySelector('.navbar__menu');
+const navbarMenuItem = document.querySelector('.navbar__menu__item');
 const home = document.querySelector('#home');
 const homeTitle = document.querySelector('.home__title');
 const homeDescription = document.querySelector('.home__description');
 const homeContact = document.querySelector('.home__contact');
 const arrowIcon = document.querySelector('.fa-long-arrow-alt-right');
+
 let homeMode = 'normal';
+
 
 navbarMenu.addEventListener('click', (e)=>{
     const link = e.target.dataset.link;
