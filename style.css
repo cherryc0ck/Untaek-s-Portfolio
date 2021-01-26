@@ -97,9 +97,9 @@ h2 {
   }
 }
 
-.skill__value.graph-90 {
+/* .skill__value.graph-90 {
   animation: graph-90 2s;
-}
+} */
 .skill__value.graph-70 {
   animation: graph-70 2s;
 }
