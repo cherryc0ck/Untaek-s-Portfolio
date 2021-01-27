@@ -49,6 +49,8 @@ a {
 button {
   cursor: pointer;
   outline: none;
+  border: none;
+  background: transparent;
 }
 body {
   font-family: "Noto Sans KR", sans-serif;
@@ -166,7 +168,7 @@ section {
 }
 
 .container {
-  width: 1000px;
+  width: 65.83%;
   margin: 0 auto;
   padding: 80px 0;
 }
@@ -185,7 +187,8 @@ section {
 }
 
 .navbar__toggle-btn {
-  display: none;
+  color: var(--color-dark-white);
+  font-size: 30px;
 }
 
 .navbar__menu {
@@ -239,7 +242,7 @@ section {
 }
 
 .home__container {
-  width: 1000px;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -468,7 +471,7 @@ section {
   position: relative;
 }
 
-.emsi {
+.pen {
   position: absolute;
   width: 215px;
   bottom: 65px;
@@ -706,4 +709,121 @@ section {
 #contact {
   background-color: var(--color-dark-black);
   font-size: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  #navbar {
+    justify-content: space-between;
+  }
+
+  .logo-H {
+    width: 65px;
+    height: 65px;
+    padding: 0 5px;
+  }
+
+  .navbar__menu {
+    display: block;
+  }
+
+  .home__contact {
+    display: none;
+  }
+
+  .navbar__menu {
+    display: none;
+  }
+
+  .navbar__toggle-btn {
+    font-size: 40px;
+    padding: 0 15px;
+  }
+
+  #home {
+    background: url("img/home/background-dark.png") 52px,
+      52px / contain no-repeat;
+  }
+
+  .home__container {
+    margin: 0 40px;
+  }
+
+  .home__title {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+
+  .home__description {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .home__about {
+    width: 130px;
+    font-size: 16px;
+  }
+
+  .about__container {
+    flex-direction: column;
+  }
+
+  .about__avatar {
+    width: 100%;
+    height: 318px;
+  }
+
+  .about__title {
+    width: 100%;
+  }
+
+  .title__text {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+
+  .title__text.webis {
+    font-size: 30px;
+  }
+
+  .title__text.intro {
+    font-size: 20px;
+  }
+
+  .title__text.description {
+    font-size: 16px;
+  }
+  .description span {
+    width: 50px;
+    font-size: 19px;
+  }
+
+  /* Skills */
+
+  .skill {
+    padding: 10px;
+  }
+
+  .skill__container {
+    width: 65.83%;
+  }
+
+  .skill__description {
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .skill__description h3 {
+    font-size: 20px;
+    margin-bottom: 2px;
+  }
+
+  .skill__bar,
+  .skill__value {
+    height: 5px;
+  }
+
+  .skill__bar {
+    width: 90%;
+  }
 }
