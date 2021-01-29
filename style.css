@@ -604,7 +604,7 @@ section {
 }
 
 .projects li:nth-child(2n + 1) {
-  margin-left: 50px;
+  margin-left: 5%;
 }
 
 .project__img {
