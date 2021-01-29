@@ -421,6 +421,11 @@ section {
   border-radius: 10%;
 }
 
+.profile {
+  width: 100%;
+  border-radius: 10%;
+}
+
 .about__title {
   width: 55%;
   letter-spacing: -0.5px;
@@ -723,17 +728,13 @@ section {
   }
 
   .container {
-    width: 80%;
+    width: 75%;
   }
 }
 
 @media screen and (max-width: 1220px) {
   .container {
-    width: 85%;
-  }
-
-  .about__avatar {
-    height: auto;
+    width: 80%;
   }
 
   .title__text.webis {
@@ -788,10 +789,12 @@ section {
     font-size: 28px;
   }
 
+  /*
   .about__avatar {
     width: 340px;
     height: 340px;
   }
+  */
 
   .title__text.webis {
     font-size: 30px;
