@@ -409,6 +409,8 @@ section {
   position: relative;
   z-index: 2;
   background-color: #fff;
+  display: flex;
+  align-items: center;
 }
 
 .about__container {
@@ -478,6 +480,8 @@ section {
   background-color: var(--color-dark-black);
   color: white;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .pen {
