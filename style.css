@@ -947,13 +947,16 @@ section {
     top: 2px;
   }
 
-  .about__avatar,
+  .about__avatar {
+    width: 70%;
+  }
+
   .about__title {
     width: 80%;
   }
 
   .title__text.webis {
-    font-size: 23px;
+    font-size: 22px;
   }
 
   .title__text.intro {
