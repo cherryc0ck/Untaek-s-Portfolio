@@ -874,3 +874,55 @@ section {
     font-size: 10px;
   }
 }
+
+@media screen and (max-width: 460px) {
+  #navbar {
+    justify-content: space-between;
+  }
+
+  .navbar__logo,
+  .navbar__toggle-btn {
+    padding: 0 12px;
+  }
+
+  .logo-H {
+    width: 50px;
+    height: 50px;
+  }
+
+  .navbar__menu {
+    display: none;
+  }
+
+  .navbar__toggle-btn {
+    display: block;
+  }
+
+  .home__title,
+  .project__description h3 {
+    font-size: 28px;
+    margin-bottom: 18px;
+  }
+
+  .home__description,
+  .project__descrion {
+    font-size: 10px;
+    margin-bottom: 18px;
+  }
+
+  .home__about {
+    width: 80px;
+    height: 25px;
+    font-size: 10px;
+  }
+
+  .home__about i {
+    font-size: 20px;
+    right: -10px;
+    top: 2px;
+  }
+
+  .ele {
+    display: none;
+  }
+}
