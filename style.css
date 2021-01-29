@@ -468,7 +468,6 @@ section {
   z-index: 5;
   height: 4500px;
   width: 1px;
-  /* background-color: var(--color-light-black); */
   position: absolute;
   background-color: var(--color-blue-bottle);
   left: 50%;
@@ -830,6 +829,10 @@ section {
     padding: 40px 0;
   }
 
+  .line {
+    display: none;
+  }
+
   .contact__menu {
     display: none;
   }
@@ -855,10 +858,6 @@ section {
   .project__descrion {
     font-size: 16px;
     margin-bottom: 18px;
-  }
-
-  #about {
-    z-index: 5;
   }
 
   .about__container {
@@ -944,6 +943,11 @@ section {
     top: 2px;
   }
 
+  .about__avatar,
+  .about__title {
+    width: 70%;
+  }
+
   .title__text.webis {
     font-size: 23px;
   }
@@ -957,6 +961,7 @@ section {
   }
   .title__text.description span {
     font-size: 14px;
+    line-height: 1em;
   }
 
   .skill__container {
