@@ -62,7 +62,7 @@ button {
 }
 
 h2 {
-  font-size: var(--font-medium);
+  font-size: 28px;
   font-weight: 500;
 }
 
@@ -256,7 +256,7 @@ section {
 
 .home__title,
 .project__description h3 {
-  font-size: var(--font-x-large);
+  font-size: 68px;
   font-weight: var(--weight-big-bold);
   letter-spacing: -1.2px;
   color: var(--color-white);
@@ -588,7 +588,6 @@ section {
 .skill p {
   padding: 20px 0;
   line-height: 1.6em;
-  /* font-size: 16 ㅡ> 15 */
   font-size: 15px;
 }
 
@@ -599,15 +598,9 @@ section {
 }
 
 .projects li {
-  width: 100%;
-  /* height: 480px; */
+  width: 95%;
+  height: 480px;
   margin-bottom: 100px;
-}
-
-.projects li:after {
-  display: block;
-  content: "";
-  padding-bottom: 140%;
 }
 
 .projects li:nth-child(2n + 1) {
@@ -725,6 +718,20 @@ section {
 
   .container {
     width: 75%;
+  }
+
+  .projects li {
+    height: auto;
+  }
+
+  .project {
+    height: auto;
+  }
+
+  .project:after {
+    display: block;
+    content: "";
+    padding-bottom: 140%;
   }
 }
 
