@@ -418,7 +418,6 @@ section {
 .about__avatar {
   width: 45%;
   height: 450px;
-  background: url("img/profill/profile5.jpg") center/cover no-repeat;
   border-radius: 10%;
 }
 
@@ -720,14 +719,43 @@ section {
 
 @media screen and (max-width: 1400px) {
   .skill__container {
+    width: 70%;
+  }
+
+  .container {
     width: 80%;
   }
 }
 
 @media screen and (max-width: 1220px) {
+  .container {
+    width: 85%;
+  }
+
+  .about__avatar {
+    height: auto;
+  }
+
+  .title__text.webis {
+    font-size: 38px;
+  }
+
+  .title__text.intro {
+    font-size: 28px;
+  }
+
+  .title__text.description {
+    font-size: 18px;
+  }
+
   .skill {
     padding: 20px;
   }
+
+  .skill__description h3 {
+    font-size: 22px;
+  }
+
   .division,
   .skill__division,
   .pen {
@@ -759,6 +787,38 @@ section {
   .home__about i {
     font-size: 28px;
   }
+
+  .about__avatar {
+    width: 340px;
+    height: 340px;
+  }
+
+  .title__text.webis {
+    font-size: 30px;
+  }
+
+  .title__text.intro {
+    font-size: 24px;
+  }
+
+  .title__text.description {
+    font-size: 16px;
+  }
+
+  /*
+  .about__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about__avatar {
+    width: 300px;
+    height: 300px;
+  }
+
+  .title__text {
+    padding: 0;
+  } */
 
   .skill__container {
     width: 90%;
@@ -912,7 +972,7 @@ section {
 
   .home__about {
     width: 80px;
-    height: 25px;
+    height: 30px;
     font-size: 10px;
   }
 
