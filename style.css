@@ -598,22 +598,16 @@ section {
   height: 100%;
 }
 
-.section__title.work {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-.section__description {
-  font-size: 32px;
-  text-align: center;
-  color: var(--color-dark-black);
-  font-weight: 700;
-}
-
 .projects li {
-  width: 950px;
-  height: 480px;
+  width: 100%;
+  /* height: 480px; */
   margin-bottom: 100px;
+}
+
+.projects li:after {
+  display: block;
+  content: "";
+  padding-bottom: 140%;
 }
 
 .projects li:nth-child(2n + 1) {
