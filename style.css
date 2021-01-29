@@ -417,7 +417,6 @@ section {
 
 .about__avatar {
   width: 45%;
-  height: 450px;
   border-radius: 10%;
 }
 
@@ -455,7 +454,7 @@ section {
 }
 .description span {
   display: inline-block;
-  width: 65px;
+  width: 18%;
   height: 15px;
   font-size: 22px;
   font-weight: 600;
@@ -737,16 +736,24 @@ section {
     width: 80%;
   }
 
+  .about__avatar {
+    width: 50%;
+  }
+
   .title__text.webis {
     font-size: 38px;
   }
 
   .title__text.intro {
-    font-size: 28px;
+    font-size: 26px;
   }
 
   .title__text.description {
-    font-size: 18px;
+    font-size: 17px;
+  }
+
+  .title__text.description span {
+    font-size: 19px;
   }
 
   .skill {
@@ -789,13 +796,6 @@ section {
     font-size: 28px;
   }
 
-  /*
-  .about__avatar {
-    width: 340px;
-    height: 340px;
-  }
-  */
-
   .title__text.webis {
     font-size: 30px;
   }
@@ -808,20 +808,9 @@ section {
     font-size: 16px;
   }
 
-  /*
-  .about__container {
-    flex-direction: column;
-    align-items: center;
+  .title__text.description span {
+    font-size: 18px;
   }
-
-  .about__avatar {
-    width: 300px;
-    height: 300px;
-  }
-
-  .title__text {
-    padding: 0;
-  } */
 
   .skill__container {
     width: 90%;
@@ -837,6 +826,10 @@ section {
 }
 
 @media screen and (max-width: 768px) {
+  .container {
+    padding: 40px 0;
+  }
+
   .contact__menu {
     display: none;
   }
@@ -862,6 +855,36 @@ section {
   .project__descrion {
     font-size: 16px;
     margin-bottom: 18px;
+  }
+
+  #about {
+    z-index: 5;
+  }
+
+  .about__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about__avatar,
+  .about__title {
+    width: 65%;
+  }
+
+  .about__title {
+    text-align: center;
+  }
+
+  .title__text.description {
+    font-size: 15px;
+  }
+
+  .title__text.description span {
+    font-size: 16px;
+  }
+
+  .title__text {
+    padding: 5px 0;
   }
 
   .skill__description {
@@ -919,6 +942,21 @@ section {
     font-size: 28px;
     right: -15px;
     top: 2px;
+  }
+
+  .title__text.webis {
+    font-size: 23px;
+  }
+
+  .title__text.intro {
+    font-size: 18px;
+  }
+
+  .title__text.description {
+    font-size: 13px;
+  }
+  .title__text.description span {
+    font-size: 14px;
   }
 
   .skill__container {
