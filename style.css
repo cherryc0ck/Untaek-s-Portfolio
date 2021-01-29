@@ -719,20 +719,6 @@ section {
   .container {
     width: 75%;
   }
-
-  .projects li {
-    height: auto;
-  }
-
-  .project {
-    height: auto;
-  }
-
-  .project:after {
-    display: block;
-    content: "";
-    padding-bottom: 140%;
-  }
 }
 
 @media screen and (max-width: 1220px) {
@@ -908,6 +894,19 @@ section {
   .skill__value {
     width: 90%;
     height: 5px;
+  }
+  .projects li {
+    height: auto;
+  }
+
+  .project {
+    height: auto;
+  }
+
+  .project:after {
+    display: block;
+    content: "";
+    padding-bottom: 100%;
   }
 }
 
