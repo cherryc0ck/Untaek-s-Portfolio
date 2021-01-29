@@ -993,6 +993,9 @@ section {
     justify-content: space-between;
   }
 
+  #home {
+    height: calc(100vh - 51px);
+  }
   .navbar__logo,
   .navbar__toggle-btn {
     padding: 0 12px;
