@@ -35,13 +35,9 @@
   --radius-mini: 4px;
   --radius-basic: 7px;
   --radius-half: 50%;
-
-  /* Animation */
-  --animation-duration: 300ms;
 }
 
 /* Typography */
-
 a {
   text-decoration: none;
 }
@@ -64,6 +60,20 @@ button {
 h2 {
   font-size: 28px;
   font-weight: 500;
+}
+
+/* Animation */
+
+@keyframes home-scroll {
+  0% {
+    top: 10px;
+  }
+  75% {
+    top: 30px;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 @keyframes graph-90 {
@@ -153,10 +163,11 @@ h2 {
 }
 
 section {
+  width: 100%;
   height: 100vh;
 }
 
-.section {
+.section.another {
   padding: 80px 0;
 }
 
@@ -247,6 +258,7 @@ section {
   justify-content: center;
   background: url("img/home/background-dark.png") center/contain no-repeat;
   background-color: var(--color-dark-black);
+  color: #fff;
 }
 
 .home__container {
@@ -401,7 +413,40 @@ section {
   height: 35px;
   bottom: 5px;
   left: 680px;
-  /* 550px */
+}
+
+.scrolldown {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.scrolldown span {
+  width: 28px;
+  height: 40px;
+  border: 2px solid var(--color-pink-hot);
+  border-radius: 50px;
+}
+
+.scrolldown span:after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: var(--color-pink-hot);
+  border-radius: 100%;
+  animation: home-scroll 2s infinite;
+}
+
+.scrolldown,
+.scrolldown span {
+  cursor: pointer;
+  position: absolute;
+  transform: translateX(-50%);
+  bottom: 30px;
+  left: 50%;
 }
 
 /* About */
@@ -708,7 +753,54 @@ section {
 
 #contact {
   background-color: var(--color-dark-black);
-  font-size: 100px;
+  color: var(--color-white);
+  text-align: center;
+}
+
+.contact__container {
+  border: 1px solid var(--color-white);
+}
+
+.contact__title {
+  font-weight: 900;
+  font-size: 40px;
+  margin-bottom: 45px;
+}
+
+.contact i {
+  width: 25%;
+  font-size: 32px;
+  border-right: 5px solid var(--color-blue-bottle);
+}
+
+.contact span {
+  width: 75%;
+}
+
+.contact {
+  border: 5px solid var(--color-blue-bottle);
+  width: 40%;
+  margin: 0 auto;
+  font-size: 21px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  align-items: center;
+  padding: 30px 0;
+  color: var(--color-white);
+}
+
+.contact:hover {
+  background-color: blue;
+  transform: scale(1.1);
+  transition: all 500ms ease-in-out;
+  border: 5px solid white;
+}
+
+.info {
+  margin: 0 10px;
+  font-weight: 900;
 }
 
 @media screen and (max-width: 1400px) {

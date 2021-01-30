@@ -15,10 +15,10 @@ document.addEventListener('scroll', (e)=>{
         graph_70.forEach(graph__70=>{
             graph__70.style.animation = 'graph-70 2s';
         });
-        graph__60.forEach(graph__60=>{
+        graph_60.forEach(graph__60=>{
             graph__60.style.animation = 'graph-60 2s';
         });
-        graph__50.forEach(graph__50=>{
+        graph_50.forEach(graph__50=>{
             graph__50.style.animation = 'graph-50 2s';
         });
     }
