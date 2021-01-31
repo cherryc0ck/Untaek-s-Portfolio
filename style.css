@@ -1027,6 +1027,17 @@ section {
     left: 0;
   }
 
+  .scrolldown span {
+    width: 22px;
+    height: 34px;
+  }
+
+  .scrolldown,
+  .scrolldown span {
+    font-size: 12px;
+    bottom: 20px;
+  }
+
   .home__container {
     margin: 0 10%;
   }
