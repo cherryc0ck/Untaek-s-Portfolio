@@ -774,7 +774,7 @@ section {
 }
 
 .contact span {
-  width: 75%;
+  width: 100%;
 }
 
 .contact {
@@ -906,6 +906,14 @@ section {
   .skill p {
     font-size: 13px;
   }
+
+  .contact {
+    font-size: 18px;
+  }
+
+  .contact i {
+    border: 0px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1001,6 +1009,10 @@ section {
     content: "";
     padding-bottom: 100%;
   }
+
+  .contact {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -1080,6 +1092,15 @@ section {
   .skill__bar span {
     font-size: 10px;
   }
+
+  .contact {
+    width: 70%;
+  }
+
+  .info {
+    font-size: 14px;
+    margin: 0 5px;
+  }
 }
 
 @media screen and (max-width: 460px) {
@@ -1135,5 +1156,9 @@ section {
 
   .ele {
     display: none;
+  }
+
+  .contact {
+    width: 75%;
   }
 }
