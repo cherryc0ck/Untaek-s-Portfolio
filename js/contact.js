@@ -24,7 +24,6 @@ switch(calculationMonth){
 };
 contactDate.innerHTML = `${month.concat(' ',date)}`;
 
-
 setInterval(realTime, 1000);
 
 function realTime(){
