@@ -14,27 +14,6 @@
   --color-red: #ff0000;
   --color-dark-navy: #4d5063;
   --color-grey-navy: #303038;
-
-  /* #4c4f65; */
-
-  /* Font size */
-  --font-x-large: 68px;
-  --font-large: 48px;
-  --font-medium: 28px;
-  --font-regular: 18px;
-  --font-small: 16px;
-  --font-micro: 14px;
-
-  /* Font weight */
-  --weight-big-bold: 900;
-  --weight-bold: 700;
-  --weight-semi-bold: 600;
-  --weight-regular: 400;
-
-  /* Border Radius */
-  --radius-mini: 4px;
-  --radius-basic: 7px;
-  --radius-half: 50%;
 }
 
 /* Typography */
@@ -51,6 +30,7 @@ button {
 body {
   font-family: "Noto Sans KR", sans-serif;
   margin: 0;
+  overflow-x: hidden;
 }
 
 button {
@@ -109,9 +89,9 @@ h2 {
   }
 }
 
-/* .skill__value.graph-90 {
+.skill__value.graph-90 {
   animation: graph-90 2s;
-} */
+}
 .skill__value.graph-70 {
   animation: graph-70 2s;
 }
@@ -120,12 +100,6 @@ h2 {
 }
 .skill__value.graph-50 {
   animation: graph-50 2s;
-}
-
-@keyframes aou {
-  50% {
-    background-color: var(--color-dark-black);
-  }
 }
 
 @keyframes go-right {
@@ -156,9 +130,9 @@ h2 {
 }
 
 .section__title {
-  text-align: center;
   color: var(--color-dark-navy);
   font-size: 28px;
+  text-align: center;
   letter-spacing: -1.2px;
 }
 
@@ -174,8 +148,8 @@ section {
 .underline {
   width: 85px;
   height: 2px;
-  background-color: black;
   margin: 10px auto;
+  background-color: black;
 }
 
 .container {
@@ -186,12 +160,11 @@ section {
 
 /* Navbar */
 #navbar {
-  width: 100%;
   display: flex;
   justify-content: space-around;
-  background-color: var(--color-dark-black);
-  position: fixed;
+  width: 100%;
   top: 0;
+  background-color: var(--color-dark-black);
   z-index: 10;
 }
 
@@ -207,9 +180,9 @@ section {
 }
 
 .navbar__toggle-btn {
-  color: var(--color-dark-white);
-  font-size: 30px;
   display: none;
+  font-size: 30px;
+  color: var(--color-dark-white);
 }
 
 .navbar__menu {
@@ -219,13 +192,41 @@ section {
   left: 8%;
 }
 
+.navbar__menu:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.navbar__menu__item:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -8px;
+  width: 0;
+  height: 4px;
+  background: var(--color-blue-bottle);
+  transition-property: width;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  z-index: 1;
+}
+.navbar__menu__item:hover:after,
+.navbar__menu__item:focus:after,
+.navbar__menu__item:active:after {
+  left: 0;
+  right: auto;
+  width: 100%;
+  background: var(--color-red);
+}
+
 .navbar__menu__item {
   position: relative;
-  color: var(--color-dark-white);
-  font-size: var(--font-regular);
-  font-weight: var(--weight-bold);
   margin: 8px 16px;
   padding: 0 8px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-dark-white);
   cursor: pointer;
 }
 
@@ -233,32 +234,12 @@ section {
   color: var(--color-white);
 }
 
-.navbar__menu__item:after,
-.navbar__menu__item:before {
-  content: "";
-  position: absolute;
-  bottom: -8px;
-  left: 0;
-  right: 0;
-  width: 0px;
-  height: 3px;
-  background-color: #f25757;
-  /* background-color: #189cc4; */
-  transition: all 0.25s cubic-bezier(0.694, 0.048, 0.335, 1);
-  opacity: 0;
-}
-
-.navbar__menu__item:hover:after {
-  width: 100%;
-  opacity: 1;
-}
-
 #home {
-  width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
+  height: calc(100vh - 81px);
   background: url("img/home/background-dark.png") center/contain no-repeat;
   background-color: var(--color-dark-black);
   color: #fff;
@@ -271,36 +252,67 @@ section {
 
 .home__title,
 .project__description h3 {
+  margin-bottom: 35px;
   font-size: 68px;
-  font-weight: var(--weight-big-bold);
+  font-weight: 900;
   letter-spacing: -1.2px;
   color: var(--color-white);
-  margin-bottom: 35px;
 }
 
 .home__description,
 .project__description h4 {
-  font-size: var(--font-regular);
-  font-weight: var(--weight-bold);
+  margin-bottom: 35px;
+  font-size: 18px;
+  font-weight: 700;
   font-style: italic;
   letter-spacing: 1.2px;
   color: var(--color-white);
-  margin-bottom: 35px;
 }
 
 .home__about,
 .project__description button {
+  position: relative;
   width: 150px;
   height: 40px;
-  position: relative;
-  font-size: var(--font-regular);
-  font-weight: var(--weight-bold);
-  color: var(--color-white);
-  /* background-color: var(--color-pink-hot); */
-  /* background-color: #f06449; */
-  background-color: var(--color-blue-bottle);
   border: none;
-  border-radius: var(--radius-mini);
+  border-radius: 4px;
+  background-color: var(--color-blue-bottle);
+  color: var(--color-white);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.home__about,
+.home__about::after {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.home__about {
+  background: var(--color-dark-black);
+  border: 1px solid var(--color-blue-bottle);
+  z-index: 0;
+}
+
+.home__about::before,
+.home__about::after {
+  background: var(--color-blue-bottle);
+  content: "";
+  position: absolute;
+  z-index: -1;
+}
+
+.home__about::after {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 0;
+}
+
+.home__about:hover:after {
+  width: 100%;
 }
 
 .home__about i {
@@ -311,11 +323,11 @@ section {
 }
 
 .home__contact {
-  width: 6.5%;
   position: absolute;
   top: 50%;
-  transform: translate(0, -50%);
   right: 0px;
+  transform: translate(0, -50%);
+  width: 6.5%;
 }
 
 .home__contact i:hover {
@@ -328,18 +340,14 @@ section {
   color: var(--color-dark-navy);
 }
 
-.home__about:hover {
-  animation: aou 0.3s linear 1;
-}
-
 .home__about:hover i {
   right: -20%;
   transition: all 350ms ease-in-out;
 }
 .contact__menu i {
+  padding: 10px 0;
   font-size: 36px;
   color: var(--color-dark-white);
-  padding: 10px 0;
 }
 
 .ele {
@@ -349,73 +357,73 @@ section {
 }
 
 .ele.semo1 {
-  width: 60px;
-  height: 30px;
   top: 150px;
   left: 400px;
+  width: 60px;
+  height: 30px;
 }
 
 .ele.semo2 {
-  width: 60px;
-  height: 40px;
   top: 150px;
   right: 400px;
+  width: 60px;
+  height: 40px;
 }
 
 .ele.stick1 {
-  width: 40px;
-  height: 40px;
   top: -20px;
   left: 330px;
+  width: 40px;
+  height: 40px;
 }
 
 .ele.stick2 {
-  width: 40px;
-  height: 40px;
   bottom: 0px;
   right: 180px;
+  width: 40px;
+  height: 40px;
 }
 
 .ele.stick3 {
-  width: 30px;
-  height: 40px;
   bottom: 0px;
   left: 100px;
+  width: 30px;
+  height: 40px;
 }
 
 .ele.semicircle1 {
-  width: 40px;
-  height: 25px;
   top: -10px;
   left: 1350px;
+  width: 40px;
+  height: 25px;
 }
 
 .ele.semicircle2 {
-  width: 30px;
-  height: 20px;
   bottom: 200px;
   right: 150px;
+  width: 30px;
+  height: 20px;
 }
 
 .ele.semicircle3 {
-  width: 30px;
-  height: 25px;
   bottom: 150px;
   left: 150px;
+  width: 30px;
+  height: 25px;
 }
 
 .ele.wave1 {
-  width: 25px;
-  height: 40px;
   top: 230px;
   left: 50px;
+  width: 25px;
+  height: 40px;
 }
 
 .ele.wave2 {
-  width: 25px;
-  height: 35px;
   bottom: 5px;
   left: 680px;
+  width: 25px;
+  height: 35px;
 }
 
 .scrolldown {
@@ -445,20 +453,20 @@ section {
 
 .scrolldown,
 .scrolldown span {
-  cursor: pointer;
   position: absolute;
-  transform: translateX(-50%);
   bottom: 30px;
   left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
 }
 
 /* About */
 #about {
-  position: relative;
-  z-index: 2;
-  background-color: #fff;
   display: flex;
   align-items: center;
+  position: relative;
+  background-color: #fff;
+  z-index: 2;
 }
 
 .about__container {
@@ -486,7 +494,7 @@ section {
 
 .title__text.webis {
   font-size: 45px;
-  font-weight: var(--weight-bold);
+  font-weight: 700;
   font-family: "PT Sans Caption", sans-serif;
 }
 
@@ -496,47 +504,48 @@ section {
 }
 
 .title__text.description {
+  position: relative;
   font-size: 20px;
   font-weight: 400;
   line-height: 2em;
   letter-spacing: -1.2px;
-  position: relative;
 }
+
 .description span {
   display: inline-block;
   width: 18%;
   height: 15px;
+  background-color: aqua;
   font-size: 22px;
   font-weight: 600;
   letter-spacing: 2px;
-  background-color: aqua;
   line-height: 0.5em;
   text-align: center;
 }
 
 .line {
-  z-index: 5;
-  height: 4500px;
-  width: 1px;
   position: absolute;
-  background-color: var(--color-blue-bottle);
   left: 50%;
+  width: 1px;
+  height: 4487px;
+  background-color: var(--color-blue-bottle);
   opacity: 0.2;
+  z-index: 5;
 }
 
 #skills {
-  background-color: var(--color-dark-black);
-  color: white;
-  position: relative;
   display: flex;
   align-items: center;
+  position: relative;
+  background-color: var(--color-dark-black);
+  color: white;
 }
 
 .pen {
   position: absolute;
-  width: 215px;
   bottom: -66px;
   right: -165px;
+  width: 215px;
 }
 
 .skill__container {
@@ -548,8 +557,8 @@ section {
 
 .skill__left,
 .skill__right {
-  width: 50%;
   position: relative;
+  width: 50%;
 }
 
 .skill__division {
@@ -606,7 +615,6 @@ section {
 
 .skill__description h3 {
   width: 25%;
-  /* font-size: 28 ㅡ> 25 */
   font-size: 26px;
   font-weight: bold;
   color: var(--color-light-teal);
@@ -615,8 +623,8 @@ section {
 .skill__bar {
   display: flex;
   position: relative;
-  height: 10px;
   width: 55%;
+  height: 10px;
   background-color: var(--color-grey-navy);
 }
 
@@ -624,8 +632,8 @@ section {
   position: absolute;
   top: -3px;
   right: -21px;
-  color: var(--color-light-teal);
   font-size: 13px;
+  color: var(--color-light-teal);
 }
 
 .skill__value {
@@ -657,30 +665,30 @@ section {
 
 .project__img {
   position: relative;
-  z-index: 6;
   width: 100%;
   height: 100%;
+  z-index: 6;
 }
 
 .project {
   display: inline-block;
   position: relative;
-  z-index: 6;
   width: 100%;
   height: 100%;
   color: #fff;
   overflow: hidden;
   box-shadow: 0 20px 80px 0 rgba(0, 0, 0, 0.45);
+  z-index: 6;
 }
 
 .project:hover .project__number {
-  opacity: 1;
   animation: ani-number 2s both;
   transition: all 600ms ease-in-out;
+  opacity: 1;
 }
 .project:hover .mask {
-  opacity: 0.5;
   animation: go-right 0.5s 0.2s both;
+  opacity: 0.5;
 }
 .project:hover .project__description {
   animation: scale1 0.5s 0.5s both;
@@ -734,12 +742,12 @@ section {
 }
 
 .project__number {
-  opacity: 0;
-  font-size: 200px;
   position: absolute;
   right: 0;
+  font-size: 200px;
   font-family: fantasy;
   color: lightslategrey;
+  opacity: 0;
   z-index: 10;
 }
 
@@ -755,6 +763,7 @@ section {
 }
 
 #contact {
+  height: auto;
   background-color: var(--color-dark-black);
   color: var(--color-white);
   text-align: center;
@@ -765,15 +774,15 @@ section {
 }
 
 .contact__title {
+  margin-bottom: 45px;
   font-weight: 900;
   font-size: 40px;
-  margin-bottom: 45px;
 }
 
 .contact i {
   width: 25%;
-  font-size: 32px;
   border-right: 5px solid var(--color-blue-bottle);
+  font-size: 32px;
 }
 
 .contact span {
@@ -781,24 +790,24 @@ section {
 }
 
 .contact {
-  border: 5px solid var(--color-blue-bottle);
-  width: 40%;
-  margin: 0 auto;
-  font-size: 21px;
-  font-weight: 600;
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
   align-items: center;
+  width: 40%;
+  margin: 0 auto;
+  margin-bottom: 30px;
   padding: 30px 0;
+  border: 5px solid var(--color-blue-bottle);
+  font-size: 21px;
+  font-weight: 600;
   color: var(--color-white);
 }
 
 .contact:hover {
-  background-color: blue;
+  background-color: #3c7faa;
+  border: 5px solid white;
   transform: scale(1.1);
   transition: all 500ms ease-in-out;
-  border: 5px solid white;
 }
 
 .info {
@@ -938,21 +947,21 @@ section {
   }
 
   .navbar__menu__item {
-    font-size: 16px;
-    margin: 0 2px;
     left: 2%;
+    margin: 0 2px;
+    font-size: 16px;
   }
 
   .home__title,
   .project__description h3 {
-    font-size: 38px;
     margin-bottom: 18px;
+    font-size: 38px;
   }
 
   .home__description,
   .project__description h4 {
-    font-size: 16px;
     margin-bottom: 18px;
+    font-size: 16px;
   }
 
   .about__container {
@@ -982,8 +991,8 @@ section {
   }
 
   .skill__description {
-    align-items: flex-start;
     flex-direction: column;
+    align-items: flex-start;
   }
 
   .skill__description h3 {
@@ -1008,8 +1017,8 @@ section {
   }
 
   .project:after {
-    display: block;
     content: "";
+    display: block;
     padding-bottom: 100%;
   }
 
@@ -1034,8 +1043,8 @@ section {
 
   .scrolldown,
   .scrolldown span {
-    font-size: 12px;
     bottom: 20px;
+    font-size: 12px;
   }
 
   .home__container {
@@ -1044,14 +1053,14 @@ section {
 
   .home__title,
   .project__description h3 {
-    font-size: 32px;
     margin-bottom: 18px;
+    font-size: 32px;
   }
 
   .home__description,
   .project__description h4 {
-    font-size: 14px;
     margin-bottom: 18px;
+    font-size: 14px;
   }
 
   .home__about,
@@ -1062,9 +1071,9 @@ section {
   }
 
   .home__about i {
-    font-size: 28px;
     right: -15px;
     top: 2px;
+    font-size: 28px;
   }
 
   .about__avatar {
@@ -1112,8 +1121,8 @@ section {
   }
 
   .info {
-    font-size: 14px;
     margin: 0 5px;
+    font-size: 14px;
   }
 }
 
@@ -1145,14 +1154,14 @@ section {
 
   .home__title,
   .project__description h3 {
-    font-size: 28px;
     margin-bottom: 18px;
+    font-size: 28px;
   }
 
   .home__description,
   .project__description h4 {
-    font-size: 10px;
     margin-bottom: 18px;
+    font-size: 10px;
   }
 
   .home__about,
@@ -1163,9 +1172,9 @@ section {
   }
 
   .home__about i {
-    font-size: 20px;
     right: -10px;
     top: 2px;
+    font-size: 20px;
   }
 
   .ele {
