@@ -14,6 +14,8 @@ const wave2 = document.querySelector('.wave2');
 const contactBtn = document.querySelector('.home__contact');
 const contactSidebar = document.querySelector('.contact__sidebar');
 
+const scrollBtn = document.querySelector('.scrolldown');
+
 contactBtn.addEventListener('click', ()=>{
     showSidebar();
 });

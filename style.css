@@ -105,19 +105,6 @@ h2 {
   }
 }
 
-.skill__value.graph-90 {
-  animation: graph-90 2s;
-}
-.skill__value.graph-70 {
-  animation: graph-70 2s;
-}
-.skill__value.graph-60 {
-  animation: graph-60 2s;
-}
-.skill__value.graph-50 {
-  animation: graph-50 2s;
-}
-
 @keyframes go-right {
   from {
     transform: translateX(-100%);
@@ -174,12 +161,20 @@ section {
   padding: 80px 0;
 }
 
+#navbar,
+#home,
+#skills,
+#contact {
+  transition: background 550ms ease-in;
+}
+
 /* Navbar */
 #navbar {
   display: flex;
   justify-content: space-around;
-  width: 100%;
+  position: fixed;
   top: 0;
+  width: 100%;
   background-color: var(--color-dark-black);
   z-index: 10;
 }
@@ -197,6 +192,9 @@ section {
 
 .navbar__toggle-btn {
   display: none;
+  position: absolute;
+  top: 6px;
+  right: 6px;
   font-size: 30px;
   color: var(--color-dark-white);
 }
@@ -206,6 +204,10 @@ section {
   align-items: center;
   position: relative;
   left: 8%;
+}
+
+.navbar__menu.open {
+  display: block;
 }
 
 .navbar__menu:after {
@@ -256,6 +258,7 @@ section {
   justify-content: center;
   width: 100%;
   height: calc(100vh - 81px);
+  margin-top: 81px;
   background: url("img/home/background-dark.png") center/contain no-repeat;
   background-color: var(--color-dark-black);
   color: #fff;
@@ -674,6 +677,19 @@ section {
   background-color: var(--color-light-teal);
 }
 
+.skill__value.graph-90 {
+  animation: graph-90 2s;
+}
+.skill__value.graph-70 {
+  animation: graph-70 2s;
+}
+.skill__value.graph-60 {
+  animation: graph-60 2s;
+}
+.skill__value.graph-50 {
+  animation: graph-50 2s;
+}
+
 .skill p {
   padding: 20px 0;
   line-height: 1.6em;
@@ -992,6 +1008,11 @@ section {
     font-size: 16px;
   }
 
+  #home {
+    margin-top: 66.6px;
+    height: calc(100vh - 66.6px);
+  }
+
   .home__container {
     margin: 0 10%;
   }
@@ -1184,12 +1205,23 @@ section {
 
 @media screen and (max-width: 460px) {
   #navbar {
+    flex-direction: column;
     justify-content: space-between;
   }
 
-  #home {
-    height: calc(100vh - 51px);
+  .navbar__menu {
+    text-align: center;
   }
+
+  .navbar__menu__item {
+    padding: 8px;
+  }
+
+  .navbar__menu__item:after {
+    bottom: 0;
+    transition-duration: 0.5s;
+  }
+
   .navbar__logo,
   .navbar__toggle-btn {
     padding: 0 12px;
@@ -1206,6 +1238,11 @@ section {
 
   .navbar__toggle-btn {
     display: block;
+  }
+
+  #home {
+    height: calc(100vh - 51.6px);
+    margin-top: 51.6px;
   }
 
   .contact__menu i {
