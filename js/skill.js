@@ -8,10 +8,12 @@ const pinger = document.querySelector('.skill__tooltip');
 
 skill.addEventListener('click', ()=>{
     showGraph();
+    showScore();
 });
 
 pinger.addEventListener('click', ()=>{
     showGraph();
+    showScore();
 });
 
 
@@ -22,3 +24,9 @@ function showGraph(){
         skill.classList.remove('click');
     });
 };
+
+function showScore(){
+    skillScore.forEach(score=>{
+        score.style.display = 'block';
+    });
+}
