@@ -1208,6 +1208,11 @@ section {
     display: block;
   }
 
+  .contact__menu i {
+    font-size: 24px;
+    padding: 6px 0;
+  }
+
   .home__title,
   .project__description h3 {
     margin-bottom: 18px;
