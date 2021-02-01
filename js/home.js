@@ -11,14 +11,9 @@ const semicircle3 = document.querySelector('.semicircle3');
 const wave1 = document.querySelector('.wave1');
 const wave2 = document.querySelector('.wave2');
 
-const contactBtn = document.querySelector('.home__contact');
-const contactSidebar = document.querySelector('.contact__sidebar');
-
 const scrollBtn = document.querySelector('.scrolldown');
 
-contactBtn.addEventListener('click', ()=>{
-    showSidebar();
-});
+
 
 document.addEventListener('mousemove', (event)=>{
     mouseLeftAndRight(event);    
@@ -94,7 +89,3 @@ function mouseUpAndDown(event){
             wave2.style.bottom = '55px';
         }
 };
-
-function showSidebar(){
-    contactSidebar.style.opacity= '1';
-}

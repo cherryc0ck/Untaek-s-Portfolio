@@ -252,6 +252,10 @@ section {
   color: var(--color-white);
 }
 
+.navbar__menu__item.active {
+  border: 1px solid var(--color-white);
+}
+
 #home {
   display: flex;
   flex-direction: column;
@@ -347,8 +351,6 @@ section {
   right: 0px;
   transform: translate(0, -50%);
   width: 6.5%;
-  transition: opacity 450ms ease-in;
-  opacity: 0;
 }
 
 .contact__sidebar i:hover {
@@ -496,7 +498,6 @@ section {
 
 .about__avatar {
   width: 45%;
-  border-radius: 10%;
 }
 
 .profile {
@@ -1279,6 +1280,10 @@ section {
     display: none;
   }
 
+  .about__container {
+    width: 90%;
+  }
+
   .title__text.description span {
     width: 13%;
   }
@@ -1293,7 +1298,11 @@ section {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 330px) {
+  .about__container {
+    width: 90%;
+  }
+
   .about__title {
     width: 85%;
   }
