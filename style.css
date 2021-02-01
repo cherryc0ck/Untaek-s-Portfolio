@@ -342,7 +342,7 @@ section {
 
 .home__about:hover i {
   right: -20%;
-  transition: all 350ms ease-in-out;
+  transition: all 550ms ease-in-out;
 }
 .contact__menu i {
   padding: 10px 0;
@@ -1179,6 +1179,10 @@ section {
 
   .ele {
     display: none;
+  }
+
+  .project__number {
+    font-size: 100px;
   }
 
   .contact {
