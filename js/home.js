@@ -11,9 +11,6 @@ const semicircle3 = document.querySelector('.semicircle3');
 const wave1 = document.querySelector('.wave1');
 const wave2 = document.querySelector('.wave2');
 
-const scrollBtn = document.querySelector('.scrolldown');
-
-
 
 document.addEventListener('mousemove', (event)=>{
     mouseLeftAndRight(event);    

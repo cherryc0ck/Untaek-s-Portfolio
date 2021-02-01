@@ -188,6 +188,7 @@ section {
 .logo-H {
   width: 80px;
   height: 80px;
+  cursor: pointer;
 }
 
 .navbar__toggle-btn {

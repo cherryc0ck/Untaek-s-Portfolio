@@ -5,6 +5,7 @@ const navbar = document.querySelector('#navbar');
 const navbarMenu = document.querySelector('.navbar__menu');
 const navbarMenuItem = document.querySelector('.navbar__menu__item');
 const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+const navbarLogo = document.querySelector('.navbar__logo');
 
 //Home Element 
 const home = document.querySelector('#home');
@@ -45,7 +46,17 @@ homeContactBtn.addEventListener('click', () => {
     scrollIntoView('#contact');
   });
 
+scrolldown.addEventListener('click', ()=>{
+    scrollIntoView('#about');
+});
+
+navbarLogo.addEventListener('click', ()=>{
+    scrollIntoView('#home');
+});
+
+
 const sectionIds = [
+    '#home',
     '#about',
     '#skills',
     '#work',
