@@ -285,7 +285,7 @@ section {
   color: var(--color-white);
 }
 
-.home__about,
+.home__contact,
 .project__description button {
   position: relative;
   width: 150px;
@@ -298,65 +298,67 @@ section {
   font-weight: 700;
 }
 
-.home__about,
-.home__about::after {
+.home__contact,
+.home__contact::after {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-.home__about {
+.home__contact {
   background: var(--color-dark-black);
   border: 1px solid var(--color-blue-bottle);
   z-index: 0;
 }
 
-.home__about::before,
-.home__about::after {
+.home__contact::before,
+.home__contact::after {
   background: var(--color-blue-bottle);
   content: "";
   position: absolute;
   z-index: -1;
 }
 
-.home__about::after {
+.home__contact::after {
   height: 100%;
   left: 0;
   top: 0;
   width: 0;
 }
 
-.home__about:hover:after {
+.home__contact:hover:after {
   width: 100%;
 }
 
-.home__about i {
+.home__contact i {
   position: absolute;
   top: 5px;
   right: -15px;
   font-size: 30px;
 }
 
-.home__contact {
+.contact__sidebar {
   position: absolute;
   top: 50%;
   right: 0px;
   transform: translate(0, -50%);
   width: 6.5%;
+  transition: opacity 450ms ease-in;
+  opacity: 0;
 }
 
-.home__contact i:hover {
+.contact__sidebar i:hover {
   color: #fff;
 }
-.home__contact.reverse i:hover {
+.contact__sidebar.reverse i:hover {
   color: var(--color-dark-black);
 }
-.home__contact.reverse i {
+.contact__sidebar.reverse i {
   color: var(--color-dark-navy);
 }
 
-.home__about:hover i {
+.home__contact:hover i {
   right: -20%;
   transition: all 550ms ease-in-out;
 }
@@ -563,6 +565,7 @@ section {
   left: 90px;
   width: 160px;
   height: 160px;
+  z-index: 10;
   cursor: pointer;
   animation: blink 1.5s infinite ease-in;
 }
@@ -917,14 +920,14 @@ section {
     margin-bottom: 30px;
   }
 
-  .home__about,
+  .home__contact,
   .project__description button {
     width: 130px;
     height: 35px;
     font-size: 16px;
   }
 
-  .home__about i {
+  .home__contact i {
     font-size: 28px;
   }
 
@@ -1107,14 +1110,14 @@ section {
     font-size: 14px;
   }
 
-  .home__about,
+  .home__contact,
   .project__description button {
     width: 120px;
     height: 30px;
     font-size: 13px;
   }
 
-  .home__about i {
+  .home__contact i {
     right: -15px;
     top: 2px;
     font-size: 28px;
@@ -1208,14 +1211,14 @@ section {
     font-size: 10px;
   }
 
-  .home__about,
+  .home__contact,
   .project__description button {
     width: 80px;
     height: 30px;
     font-size: 10px;
   }
 
-  .home__about i {
+  .home__contact i {
     right: -10px;
     top: 2px;
     font-size: 20px;
