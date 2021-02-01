@@ -42,6 +42,10 @@ h2 {
   font-weight: 500;
 }
 
+.click {
+  cursor: pointer;
+}
+
 /* Animation */
 
 @keyframes home-scroll {
@@ -53,6 +57,18 @@ h2 {
   }
   100% {
     opacity: 0;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -541,6 +557,15 @@ section {
   color: white;
 }
 
+.skill__tooltip {
+  position: absolute;
+  top: 2px;
+  left: 90px;
+  width: 160px;
+  height: 160px;
+  animation: blink 1.5s infinite ease-in;
+}
+
 .pen {
   position: absolute;
   bottom: -66px;
@@ -614,10 +639,12 @@ section {
 }
 
 .skill__description h3 {
+  position: relative;
   width: 25%;
   font-size: 26px;
   font-weight: bold;
   color: var(--color-light-teal);
+  z-index: 2;
 }
 
 .skill__bar {
@@ -629,6 +656,7 @@ section {
 }
 
 .skill__bar span {
+  display: none;
   position: absolute;
   top: -3px;
   right: -21px;
@@ -637,6 +665,7 @@ section {
 }
 
 .skill__value {
+  display: none;
   height: 10px;
   background-color: var(--color-light-teal);
 }
@@ -858,6 +887,13 @@ section {
     font-size: 22px;
   }
 
+  .skill__tooltip {
+    top: 0px;
+    left: 70px;
+    width: 130px;
+    height: 130px;
+  }
+
   .division,
   .skill__division,
   .pen {
@@ -1001,6 +1037,13 @@ section {
 
   .skill {
     padding: 10px;
+  }
+
+  .skill__tooltip {
+    top: -5px;
+    left: 55px;
+    width: 95px;
+    height: 95px;
   }
 
   .skill__bar,
