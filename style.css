@@ -977,19 +977,23 @@ section {
     display: none;
   }
 
-  .contact__menu {
-    display: none;
-  }
-
   .logo-H {
     width: 65px;
     height: 65px;
+  }
+
+  .contact__menu i {
+    font-size: 30px;
   }
 
   .navbar__menu__item {
     left: 2%;
     margin: 0 2px;
     font-size: 16px;
+  }
+
+  .home__container {
+    margin: 0 10%;
   }
 
   .home__title,
@@ -1096,6 +1100,11 @@ section {
 
   .home__container {
     margin: 0 10%;
+  }
+
+  .contact__menu i {
+    font-size: 28px;
+    padding: 8px 0;
   }
 
   .home__title,
