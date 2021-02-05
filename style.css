@@ -777,9 +777,9 @@ section {
     url("img/project/hiphop.jpg") center/cover no-repeat;
 }
 
-.project.board {
+.project.paint-box {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("img/project/board.jpg") center/cover no-repeat;
+    url("img/project/paint-box.jpg") center/cover no-repeat;
 }
 
 .project.todo {
