@@ -788,22 +788,22 @@ section {
 
 .project.paint-box {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("img/project/paint-box.jpg") center/cover no-repeat;
+    url("./img/project/paint-box.jpg") center/cover no-repeat;
 }
 
 .project.mini-game {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("img/project/mini-game.jpg") center/cover no-repeat;
+    url("./img/project/mini-game.jpg") center/cover no-repeat;
 }
 
 .project.youtube {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("img/project/youtube.jpg") center/cover no-repeat;
+    url("./img/project/youtube.jpg") center/cover no-repeat;
 }
 
 .project.petsitter {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("img/project/petsitter1.jpg") center/cover no-repeat;
+    url("./img/project/petsitter1.jpg") center/cover no-repeat;
 }
 
 .project__number {
