@@ -274,6 +274,19 @@ section {
   margin: 0 auto;
 }
 
+@keyframes test11 {
+  0% {
+    background-color: #fff;
+  }
+
+  50% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: none;
+  }
+}
+
 .home__title,
 .project__description h3 {
   margin-bottom: 35px;
@@ -772,24 +785,24 @@ section {
   opacity: 0;
 }
 
-.project.hiphop {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("img/project/hiphop.jpg") center/cover no-repeat;
-}
-
 .project.paint-box {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("img/project/paint-box.jpg") center/cover no-repeat;
 }
 
-.project.todo {
+.project.mini-game {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("img/project/todo.jpg") center/cover no-repeat;
+    url("img/project/mini-game.jpg") center/cover no-repeat;
 }
 
-.project.zombie {
+.project.youtube {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("img/project/zombie.jpg") center/cover no-repeat;
+    url("img/project/youtube.jpg") center/cover no-repeat;
+}
+
+.project.petsitter {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("img/project/petsitter1.jpg") center/cover no-repeat;
 }
 
 .project__number {

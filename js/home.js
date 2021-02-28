@@ -11,11 +11,9 @@ const semicircle3 = document.querySelector('.semicircle3');
 const wave1 = document.querySelector('.wave1');
 const wave2 = document.querySelector('.wave2');
 
-
 document.addEventListener('mousemove', (event)=>{
     mouseLeftAndRight(event);    
     mouseUpAndDown(event);
-
 });
 
 function mouseLeftAndRight(event){
