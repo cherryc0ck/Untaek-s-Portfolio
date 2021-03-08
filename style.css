@@ -793,7 +793,7 @@ section {
 
 .project.mini-game {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("img/project/mini-game.jpg") center/cover no-repeat;
+    url("./img/project/mini-game.JPG") center/cover no-repeat;
 }
 
 .project.youtube {
