@@ -792,8 +792,20 @@ section {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("./img/project/paint-box.jpg") center/cover no-repeat;
 }
+.project.hancom_clone {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("./img/project/hancom_clone.jpg") center/cover no-repeat;
+}
+.project.jipyong_clone {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("./img/project/jipyong_clone.jpg") center/cover no-repeat;
+}
+.project.typing-game {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("./img/project/typing-game.JPG") center/cover no-repeat;
+}
 
-.project.mini-game {
+.project.zombie {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("./img/project/mini-game.JPG") center/cover no-repeat;
 }
