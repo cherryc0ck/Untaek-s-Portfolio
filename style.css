@@ -914,13 +914,12 @@ section {
   font-size: 21px;
   font-weight: 600;
   color: var(--color-white);
+  transition: all 500ms ease-in-out;
 }
 
 .contact:hover {
   background-color: #3c7faa;
-  border: 5px solid white;
   transform: scale(1.1);
-  transition: all 300ms ease-in-out;
 }
 
 .info {
