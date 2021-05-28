@@ -168,6 +168,10 @@ section {
   transition: background 550ms ease-in;
 }
 
+#home {
+  transition: background-color, background-imgage 550ms ease-in;
+}
+
 /* Navbar */
 #navbar {
   display: flex;
