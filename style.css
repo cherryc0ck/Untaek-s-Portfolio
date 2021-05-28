@@ -516,8 +516,8 @@ section {
 }
 
 .profile {
-  width: 100%;
-  height: 100%;
+  width: 450px;
+  height: 450px;
   border-radius: 50%;
 }
 
@@ -920,7 +920,7 @@ section {
   background-color: #3c7faa;
   border: 5px solid white;
   transform: scale(1.1);
-  transition: all 500ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 .info {
@@ -941,6 +941,10 @@ section {
 @media screen and (max-width: 1220px) {
   .container {
     width: 80%;
+  }
+
+  .about__container.container {
+    width: 90%;
   }
 
   .about__avatar {
@@ -1010,6 +1014,15 @@ section {
 
   .home__contact i {
     font-size: 28px;
+  }
+
+  .about__container.container {
+    width: 95%;
+  }
+
+  .profile {
+    width: 360px;
+    height: 360px;
   }
 
   .title__text.webis {
@@ -1099,9 +1112,18 @@ section {
     align-items: center;
   }
 
-  .about__avatar,
   .about__title {
     width: 65%;
+  }
+
+  .about__avatar {
+    width: 280px;
+    height: 280px;
+  }
+
+  .profile {
+    width: 100%;
+    height: 100%;
   }
 
   .about__title {
@@ -1218,9 +1240,12 @@ section {
     font-size: 28px;
   }
 
+  .about__container.container {
+    width: 80%;
+  }
   .about__avatar {
-    width: 70%;
-    height: 270px;
+    width: 280px;
+    height: 280px;
   }
 
   .about__title {
@@ -1345,8 +1370,13 @@ section {
     display: none;
   }
 
-  .about__container {
+  .about__container.container {
     width: 90%;
+  }
+
+  .about__avatar {
+    width: 250px;
+    height: 250px;
   }
 
   .title__text.description span {
